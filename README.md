@@ -38,7 +38,7 @@ Eligible projects must be deployed to [Lens Testnet](https://dev-preview.lens.xy
 7. Final submission must include:
    1. Clear and concise README.
    2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
+   3. Demo video / slide deck (you are welcome to anonymize your voice / have your camera off).
 8. Projects must adhere to the hackathon terms of service.
 
 ### Submit Your Project
