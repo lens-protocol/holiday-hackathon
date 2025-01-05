@@ -3,8 +3,8 @@
 ![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/BannerLensAI.png?raw=true)
 
 LensAI empowers creators to transform ideas into stunning digital art and NFTs with AI-driven tools. Simplify, create, and monetize your art effortlessly in an integrated marketplace.
-🌐 **Live Preview:** [LensAI App
-](https://ailenser.vercel.app/)
+
+🌐 **Live Preview:** [LensAI App](https://ailenser.vercel.app/)
 
 ---
 
