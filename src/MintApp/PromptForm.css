@@ -1,0 +1,27 @@
+/* PromptForm.css */
+.prompt-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 0 ;
+    border-radius: 10px;
+  }
+  
+  .prompt-input {
+    border-radius: 10px; 
+    /* background-color: #fff; */
+  }
+  
+  .prompt-button {
+    border-radius: 10px;
+    /* height: 4em; */
+    width: 15em;
+    /* font-weight: bold; */
+  }
+  
+  /* .prompt-button:hover {
+    background-color: #49196d;
+  } */
+  .text-field {
+    color: aliceblue;
+  }

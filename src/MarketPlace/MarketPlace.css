@@ -1,0 +1,18 @@
+.base-container{
+    /* background-color: #09001A; */
+    /* background-image: image('background.svg'); */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 1000px;
+    backdrop-filter: blur(50px);
+}
+
+.typed-text {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 60px; /* Change to your desired font size */
+    color: #bdddf5;; /* Change to your desired text color */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+  }

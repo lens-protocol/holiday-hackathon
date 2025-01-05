@@ -1,0 +1,84 @@
+.sell-image-container {
+  align-content: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (optional) */
+}
+
+.sell-image-container img {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
+.sell-button-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.sell-button-container button {
+  /* color: white; */
+  /* border: none;  */
+  /* padding: 0 20px; */
+  /* cursor: pointer; */
+  width: 50%;
+  
+}
+
+.sell-description {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 30px; /* Change to your desired font size */
+  color: #bdddf5;; /* Change to your desired text color */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 5px 0;
+}
+
+.price {
+
+ 
+  align-items: center;        /* Center items vertically */
+  padding-right: 10px;
+  padding-left: 1px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  height: 100px;              /* Set a height for the container (adjust as needed) */
+
+}
+
+.show-priceeBuy {
+  padding-top: 20px 50px;
+  display: flex;               /* Use Flexbox */
+  /* justify-content: flex-end;  Align items to the right */
+  align-items: center;        /* Center items vertically */
+}
+.eth-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Optional: Add some space between the icon and the price */
+  margin-left: 8px;
+}
+.show-price p {
+  margin: 0; /* Remove default margin from paragraphs */
+  margin-left: 4px; /* Optional: Add some space between the price and ETH text */
+}
+
+.error {
+  color: red;
+  padding-top: 10px;
+}
+
+.show-priceeBuy p {
+  margin: 0; /* Remove default margin from paragraphs */
+  margin-left: 4px; /* Optional: Add some space between the price and ETH text */
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 20px; /* Change to your desired font size */
+  color: #bdddf5;; /* Change to your desired text color */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+}

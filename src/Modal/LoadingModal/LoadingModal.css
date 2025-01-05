@@ -1,0 +1,11 @@
+
+
+.description {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 20px; /* Change to your desired font size */
+  color: #bdddf5;; /* Change to your desired text color */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-top: 5px;
+}

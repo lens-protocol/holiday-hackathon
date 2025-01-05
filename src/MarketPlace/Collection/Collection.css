@@ -1,0 +1,22 @@
+.show-pricee {
+    padding-top: 20px 50px;
+    display: flex;               /* Use Flexbox */
+    /* justify-content: flex-end;   */
+    align-items: center;        /* Center items vertically */
+  }
+
+  .show-pricee p {
+    margin: 0; /* Remove default margin from paragraphs */
+    margin-left: 4px; /* Optional: Add some space between the price and ETH text */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 16px; /* Change to your desired font size */
+    color: #bdddf5;; /* Change to your desired text color */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+  }
+  .eth-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px; /* Optional: Add some space between the icon and the price */
+  }

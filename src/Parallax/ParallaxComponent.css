@@ -1,0 +1,76 @@
+/* ParallaxComponent.css */
+
+.parallax-container {
+    text-align: center;
+    /* padding-top: 15%; */
+  }
+  
+  .typed-text {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 32px; /* Change to your desired font size */
+    color: #bdddf5;; /* Change to your desired text color */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+  }
+  
+  .mint-app {
+    background-color: black;
+    padding-top: 15%;
+  }
+  
+  .background-layer {
+    background-color: rgba(19, 19, 19, 0.5); /* Semi-transparent black */
+    width: 100%; /* Ensures the layer takes full width */
+    height: 100%; /* Ensures the layer takes full height */
+    position: absolute; /* Positions it properly within the parallax layer */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    z-index: -1; /* Places it behind other content */
+
+    /* Blur effect */
+    filter: blur(8px); /* Adjust the blur amount as needed */
+  }
+
+ 
+.logo {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    /* height: 50vh; */
+    /* padding-top: 5%; */
+  }
+  
+  .logo img {
+    max-width: 60%; /* Make sure the logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .launch-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+  }
+
+  .launch-app button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 180px;
+  }
+
+  .roadmap {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    /* height: 50vh; */
+    /* padding-top: 5%; */
+  }
+
+  .roadmap img {
+    max-width: 100%; /* Make sure the logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }

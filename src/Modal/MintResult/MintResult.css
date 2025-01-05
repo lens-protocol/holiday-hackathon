@@ -1,0 +1,35 @@
+.image-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 66.67%; /* 2/3 aspect ratio */
+  overflow: hidden;
+  /* border: 5px solid #007bff; */
+  border-radius: 4px; /* Optional: rounded corners */
+  height: 500px;
+}
+
+.image-container img {
+  position: absolute; /* Position absolutely within the container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
+.button-container button {
+  color: white;
+  border: none; 
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.description {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 30px; /* Change to your desired font size */
+  color: #bdddf5;; /* Change to your desired text color */
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-top: 30px;
+}

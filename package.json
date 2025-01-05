@@ -1,0 +1,40 @@
+{
+  "name": "aicryptoimage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "biome check .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^0.35.3",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.6",
+    "@mui/material": "^6.1.6",
+    "@react-spring/parallax": "^9.7.5",
+    "@tanstack/react-query": "5.45.1",
+    "connectkit": "^1.8.2",
+    "pinata-web3": "^0.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^6.28.0",
+    "react-typed": "^2.0.12",
+    "viem": "latest",
+    "wagmi": "latest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@wagmi/cli": "latest",
+    "buffer": "^6.0.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}

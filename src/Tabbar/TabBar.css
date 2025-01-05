@@ -1,0 +1,76 @@
+.nav {
+  height: 100px; /* Height of the navbar */
+  display: flex; /* Use flexbox to layout the child elements */
+  align-items: center; /* Center child elements vertically */
+  justify-content: space-between; /* Space out the child elements */
+  padding: 0 30px; /* Remove padding to allow full width */
+  margin: 0; /* Ensure no margin */
+  font-family: "Open Sans", serif;
+  background-color: #000000; /* Background color */
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", serif;
+  }
+  .brandName{
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: "Open Sans", serif;
+  }
+  
+  .nav_link {
+  
+    display: flex; /* Use flexbox to layout the links */
+    justify-content: flex-start; /* Center the links horizontally */
+    align-items: center; /* Center the links vertically */
+    flex: 1; /* Allow this element to grow to fill the available space */
+    list-style: none;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 40px;
+    font-family: "Open Sans", serif;
+  }
+  
+  .nav-text {
+    padding: 0 10px; /* Add padding to the left and right of each link */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Open Sans", serif;
+    
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Open Sans", serif;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Open Sans", serif;
+  }
+  
+  /* .button-container {
+    display: flex;
+  justify-content: center;
+  font-family: "Open Sans", serif;
+  } */
+  
+  .button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Open Sans", serif;
+  }
