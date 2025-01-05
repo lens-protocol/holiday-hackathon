@@ -18,8 +18,8 @@ LensAI empowers creators to transform ideas into stunning digital art and NFTs w
 
 - **Okur Simsek** (Lens Handle: **@aidev**) Co-Founder & Lead Blockchain Developer 🛠
 - **Yusuf AKSOY** (Lens Handle: **@Letjoellive**) Co-Founder & Creative Lead (Graphic Design & UI/UX) 🎨
-- **Navid Dashsooz** Founder & CEO 🧠
-- **Costantino Testa** (Lens Handle: ***@Cyberelitex***)Co-Founder & CSO 🔍
+- **Navid Dashsooz** (Lens Handle: **@Nasran8**) Founder & CEO 🧠
+- **Costantino Testa** (Lens Handle: **@Cyberelitex**)Co-Founder & CSO 🔍
 
 ---
 
