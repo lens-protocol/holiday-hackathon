@@ -1,70 +1,111 @@
-# Lens Holiday Hackathon
+## 🚀 LensAI
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/BannerLensAI.png?raw=true)
 
-### Key Dates
+LensAI empowers creators to transform ideas into stunning digital art and NFTs with AI-driven tools. Simplify, create, and monetize your art effortlessly in an integrated marketplace.
+🌐 **Live Preview:** [LensAI App
+](https://ailenser.vercel.app/)
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+---
 
-### Tracks and Themes
+## 🌟 Project Name:
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+**LensAI**
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+---
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+## 🎨 Team Members
 
-### Prizes
+- **Okur Simsek** (Lens Handle: **@aidev**) Co-Founder & Lead Blockchain Developer 🛠
+- **Yusuf AKSOY** (Lens Handle: **@Letjoellive**) Co-Founder & Creative Lead (Graphic Design & UI/UX) 🎨
+- **Navid Dashsooz** Founder & CEO 🧠
+- **Costantino Testa** (Lens Handle: ***@Cyberelitex***)Co-Founder & CSO 🔍
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+---
 
-### Rules
+## ✨ Project Description
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+LensAI is **where creativity meets blockchain magic**!
 
-### Submit Your Project
+Ever dreamed of turning your wild ideas into breathtaking digital art? With **LensAI**, you can:
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+1. Chat with an AI buddy to craft the perfect creative prompts.
+2. Use those prompts to generate stunning, one-of-a-kind digital artwork.
+3. Mint your masterpieces as NFTs and list them for sale in an integrated marketplace.
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+LensAI simplifies the journey from idea 💡 to NFT 💎, empowering creators to monetize their art effortlessly.
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+---
 
-### Troubleshooting:
+## 🔑 Key Features
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+- 🤖 **AI-Powered Prompt Generation:** Friendly AI to refine and create custom prompts.
+- 🖼 **AI Image Creation:** Transform prompts into jaw-dropping digital art.
+- 🔗 **NFT Minting:** Seamlessly mint your artwork as NFTs on the blockchain.
+- 🛒 **Marketplace Integration:** Showcase, sell, and trade NFTs in our built-in marketplace.
+- 🛡 **ConnectKit Integration:** Securely connect your wallet for hassle-free transactions.
+
+---
+
+## 🔧 Solidity Implementation
+
+This Solidity implementation demonstrates an NFT factory pattern, enabling:
+
+1. Minting NFTs through individual contracts.
+2. Managing ownership and metadata for each NFT.
+3. Listing NFTs for sale on the blockchain with transparent ownership and pricing.
+
+---
+
+## 🔗 Deployed Contract
+
+- **Proof of Deployment:** [View Contract on Lens Testnet Explorer](https://block-explorer.testnet.lens.dev/address/0x3d8Ad6abf0Cf690bd42BDF38aF28629a323BC809#contract)
+- **Contract Address:** `0x3d8Ad6abf0Cf690bd42BDF38aF28629a323BC809`
+
+---
+
+## ⚡ Network
+
+LensAI is powered by the **Lens Protocol Testnet Network**—fast, cost-efficient, and scalable!
+
+---
+
+## 🧠 Innovative Aspects
+
+- Easy-peasy AI interactions for creative prompt generation.
+- Smooth sailing from idea to NFT minting and selling.
+- Making AI-driven creativity accessible to **everyone**, not just techies.
+
+---
+
+## 🎯 Target Audience
+
+Calling all **digital artists, content creators, and NFT enthusiasts**!
+LensAI is your go-to tool for turning ideas into revenue-generating digital art.
+
+---
+
+## 🌍 Impact
+
+LensAI is on a mission to bridge the gap between creativity and blockchain technology. By lowering barriers, we’re empowering artists while enriching the decentralized digital art ecosystem.
+
+---
+
+## 🔗 Links
+
+- **Source Code:** [GitHub - LensAI](https://github.com/saeidha/LensAI)
+- **Preview:** [LensAI App](https://ailenser.vercel.app/)
+- **Demo Video:** [Video](https://streamable.com/7i9w7f)
+- **Screenshots:** ![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/1.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/2.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/3.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/4.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/5.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/6.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/7.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/8.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/9.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/10.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/11.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/12.png?raw=true)
+![alt text](https://github.com/saeidha/LensAI/blob/main/image/README/13.png?raw=true)
