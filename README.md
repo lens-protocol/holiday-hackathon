@@ -1,70 +1,93 @@
-# Lens Holiday Hackathon
+# BookIt - Web3 Event Ticketing Platform 🎫
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+BookIt is revolutionizing event ticketing through web3 technology, creating a trustless and transparent ecosystem for event organizers and attendees.
 
-### Key Dates
+## Deployments 
+1) Live Demo : [https://book-it-opal.vercel.app/](https://book-it-opal.vercel.app/)
+2) Deployed contract : [lensExplorer](https://block-explorer.testnet.lens.dev/address/0xdB023ADd0dEFF974d03D184173c5CDd60C25cA86)
+3) Contract code : [Contract code](https://github.com/dhananjaypai08/LENS-HOLIDAYHACK/blob/master/contractsv1/contracts/BookIt.sol)
+4) Onchain AppKit code : [Familykit](https://github.com/dhananjaypai08/LENS-HOLIDAYHACK/blob/master/Frontend/src/components/Web3Provider.jsx)
+5) Slide Deck : [Deck](https://www.canva.com/design/DAGbch5iMGU/droge_pnR2o1U1nRPRIQlA/edit?utm_content=DAGbch5iMGU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+## 🎯 Problem Statement
 
-### Tracks and Themes
+The current event ticketing industry faces several critical challenges:
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+1. **Extreme Price Scalping**: Authentic tickets are being resold at drastically inflated prices (e.g., Coldplay tickets originally priced at ₹5,000 being resold for ₹1,50,000).
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+2. **Widespread Fraud**: Approximately 25% of people globally have been scammed while attempting to purchase resale tickets.
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+3. **High Platform Fees**: Traditional platforms charge substantial fees on every ticket sale, creating financial burden for both organizers and attendees.
 
-### Prizes
+## 💡 Solution
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+BookIt addresses these challenges through innovative Web3 technology:
 
-### Rules
+- **Non-transferable Digital Tickets**: Smart contract-secured tickets with cryptographic proof of ownership
+- **Reputation System**: On-chain verification of attendance and authenticated reviews
+- **Direct Value Transfer**: Peer-to-peer transactions without intermediary fees
+- **Organizer Staking**: 0.2 ETH stake requirement ensuring accountability
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+## 🛠️ Tech Stack
 
-### Submit Your Project
+- **Frontend**: ReactJS
+- **Smart Contracts**: Solidity
+- **Development Environment**: Hardhat
+- **Blockchain Interaction**: Ethers.js
+- **Storage**: IPFS
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+## 🌟 Key Features
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+- Smart contract-managed escrow system
+- Decentralized social graph for event discovery
+- On-chain reputation scoring
+- Instant financial settlements
+- User-friendly Web3 interface
+- Community-driven trust network
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+## 🚀 Getting Started
 
-### Troubleshooting:
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/bookit.git
+cd bookit
+```
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Set up environment variables
+```bash
+cp .env.example .env
+# Add your environment variables
+```
+
+4. Run development server
+```bash
+npm run dev
+```
+
+5. Deploy smart contracts
+```bash
+npx hardhat run scripts/deploy.js --network lensTestnet
+```
+
+## 🤝 Contributing
+
+We welcome contributions to BookIt! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+---
