@@ -1,70 +1,92 @@
-# Lens Holiday Hackathon
+# Lenscape - Revolutionizing Influencer Marketing with Lens Protocol
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+![Lenscape Architecture](https://github.com/user-attachments/assets/1108574c-e0b5-4894-ae26-e7c90109e5e2)
 
-### Key Dates
+[APP LINK](https://lenscape.vercel.app/)
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+## SocialFi: The Future of Marketing
 
-### Tracks and Themes
+Lenscape operates within the **SocialFi** niche, leveraging the cutting-edge features of the Lens Protocol. By combining social and financial interactions, Lenscape redefines how brands and influencers collaborate.
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+### Lens Protocol Features Empowering Lenscape:
+- **Fastest Transactions:** Instant settlement of transactions.
+- **Lowest Costs:** Near-zero fees at all times.
+- **Scalable:** Seamlessly grow your campaigns without compromise.
+- **Secure:** Backed by Ethereum’s robust security.
+- **Modular Features:** Build, publish, earn, and scale effortlessly.
+- **User-Friendly Onboarding:** Join with an email or phone number for simple integration.
+- **Portable Data:** Easily switch between apps and platforms.
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+## Video
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+[Watch the Demo](https://drive.google.com/drive/folders/1x-0mcmgqVCiGrJt-0LmndmJu6MNNUESY)
 
-### Prizes
+## About
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+**Lenscape** is an AI-powered, decentralized platform built on the Lens Protocol testnet. It simplifies and enhances the influencer marketing process for brands and influencers by leveraging blockchain's transparency and AI's analytical power. Lenscape empowers brands and influencers to collaborate seamlessly, ensuring secure, transparent, and effective advertising campaigns.
 
-### Rules
+## Key Features
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+- **AI-Powered Ratings:** Advanced AI evaluates influencer content to provide unbiased ratings based on quality and reach.
+- **Decentralized Platform:** Built on Lens Protocol for transparent, immutable, and secure transactions.
+- **Lens Integration:** Leverages Lens Protocol’s decentralized social graph for enhanced connectivity and functionality.
+- **User-Friendly Interface:** Designed for intuitive navigation and streamlined user experience for both brands and influencers.
 
-### Submit Your Project
+## Usage
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+To get started with Lenscape:
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+1. Select whether you are an **Influencer** or **Brand**.
+2. **For Influencers:**
+   - Connect your wallet and create your profile and category.
+3. **For Brands:**
+   - Connect your wallet and fill in essential details along with the category.
+4. Brands can list products they wish to promote and set budgets and the number of ads to be run.
+5. Brands can view and select influencers for their campaigns.
+6. Influencers can accept or reject campaign requests through their dashboard.
+7. Once an influencer accepts a request, they create a video on platforms like YouTube.
+8. Influencers paste the video ID and specify the language spoken in the video.
+9. Lenscape’s AI engine evaluates the video and provides ratings.
+10. Based on ratings and subscriber metrics, earnings are calculated automatically.
+11. Influencers can claim their earnings directly from their dashboard.
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+## Installation
 
-### Troubleshooting:
+To run Lenscape locally, add the following `.env` file to the **Lenscape_main** directory:
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+```env
+DATABASE_URL=<add_postgreSQL_database_url>
+NODE_ENV='development'
+PORT=4000
+REDIS_HOST=<redis_host>
+REDIS_PORT=<redis_port>
+RPC_URL=<lens_testnet_rpc_url>
+SMART_CONTRACT_ADDR=<smart_contract_address_here>
+PRIVATE_KEY=<private_key>
+REWARD_RELEASE_FROM_ADDR=<reward_release_address_here>
+```
+
+## Contributing
+
+We welcome contributions to Lenscape! Feel free to submit bug reports, feature requests, or pull requests to help improve the platform.
+
+## Authors
+
+- [Manav Notnani](https://github.com/manavnotnani/) - Frontend Developer / Smart Contract Developer
+- [Karan Goel](https://github.com/kgoel085/) - Backend Developer
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+We would like to thank the Lens Protocol team, all contributors, and supporters who have helped make Lenscape possible.
+
+## Contracts
+
+**Lens Protocol Testnet Contracts:**
+
+- **Lenscape Contract Address:** 0xc790B7a3b2C76693E5d4982B6a9Fc0CCe7f4a823(https://block-explorer.testnet.lens.dev/address/0xc790B7a3b2C76693E5d4982B6a9Fc0CCe7f4a823)
+- **Reward Release Address:** 0xfEC7566c315DD70e098c0090362c61B13De8a13a
+

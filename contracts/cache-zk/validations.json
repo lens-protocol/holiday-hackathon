@@ -1,0 +1,159 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/lenscape.sol:lenscape": {
+        "src": "contracts/lenscape.sol:4",
+        "version": {
+          "withMetadata": "62da9d80613993754ac7d692e6c5b7e55bd35d1ae5e9fa1d5790f3db73dde822",
+          "withoutMetadata": "62da9d80613993754ac7d692e6c5b7e55bd35d1ae5e9fa1d5790f3db73dde822",
+          "linkedWithoutMetadata": "62da9d80613993754ac7d692e6c5b7e55bd35d1ae5e9fa1d5790f3db73dde822"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "createIdentity(string,string,uint8)",
+          "createDeal(string,address[],uint256)",
+          "acceptDeal(uint256)",
+          "releaseReward(uint256,uint256,uint256,address)",
+          "rejectDeal(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "lenscape",
+            "src": "contracts/lenscape.sol:43"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "lenscape",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/lenscape.sol:6"
+            },
+            {
+              "contract": "lenscape",
+              "label": "dealCounter",
+              "type": "t_uint256",
+              "src": "contracts/lenscape.sol:33"
+            },
+            {
+              "contract": "lenscape",
+              "label": "deals",
+              "type": "t_mapping(t_uint256,t_struct(Deal)49_storage)",
+              "src": "contracts/lenscape.sol:34"
+            },
+            {
+              "contract": "lenscape",
+              "label": "identities",
+              "type": "t_mapping(t_address,t_struct(Identity)28_storage)",
+              "src": "contracts/lenscape.sol:35"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_uint256,t_struct(Deal)49_storage)": {
+              "label": "mapping(uint256 => struct lenscape.Deal)"
+            },
+            "t_struct(Deal)49_storage": {
+              "label": "struct lenscape.Deal",
+              "members": [
+                {
+                  "label": "id",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "brand",
+                  "type": "t_address"
+                },
+                {
+                  "label": "influencers",
+                  "type": "t_array(t_address)dyn_storage"
+                },
+                {
+                  "label": "ratingRanges",
+                  "type": "t_array(t_uint256)dyn_storage"
+                },
+                {
+                  "label": "totalBudget",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "active",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "accepted",
+                  "type": "t_mapping(t_address,t_bool)"
+                }
+              ]
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_mapping(t_address,t_struct(Identity)28_storage)": {
+              "label": "mapping(address => struct lenscape.Identity)"
+            },
+            "t_struct(Identity)28_storage": {
+              "label": "struct lenscape.Identity",
+              "members": [
+                {
+                  "label": "owner",
+                  "type": "t_address"
+                },
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "role",
+                  "type": "t_enum(Role)6"
+                },
+                {
+                  "label": "created",
+                  "type": "t_bool"
+                }
+              ]
+            },
+            "t_enum(Role)6": {
+              "label": "enum lenscape.Role",
+              "members": [
+                "Brand",
+                "Influencer"
+              ]
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": false,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.20"
+      }
+    }
+  ]
+}
