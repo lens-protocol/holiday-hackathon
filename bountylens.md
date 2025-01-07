@@ -35,4 +35,18 @@ https://bountylens.vercel.app/
 
 ## Screenshots
 
-[Add your screenshots if any]
+### Main Feed
+
+![Bounty Discovery Feed](./images/discoverpage.png)
+
+### Bounty Creation
+
+<img src="./images/landingpage.png" width="800" alt="Bounty Creation Form">
+
+### Claim Submission with IPFS
+
+![Claim Submission](./images/submit-claim.png)
+
+### Accepted Claims
+
+![Claim Submission](./images/sccepted.png)
