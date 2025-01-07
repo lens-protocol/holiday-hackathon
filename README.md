@@ -54,13 +54,16 @@ Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/
 [Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
 
 2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+   - **Project Name:** LENSNOMICS
+   - **Team Members:** Scarf and Percival 
+   - **Project Description:** A cutting-edge decentralized social platform that revolutionizes community interactions through blockchain technology and innovative tokenization mechanisms.
+   - **Source Code Link:** https://github.com/Hoblayerta/LENSNOMICS
+   - **Preview Link (Optional):** https://community-token-portal-1-hoblayerta.replit.app/
+   - **Demo Video/Slide Deck Link (Optional):** https://youtu.be/weelcnxTMPQ 
+   https://www.loom.com/share/5d99a1147d20465799053fa615598935?sid=1067f5bb-91f4-4067-a88a-d40ed5a79ad2
+   - **Screenshots (Optional):** https://www.figma.com/design/ePrz0QaBffeVl2hF2Ajm3Y/lensnomic-roatmap?node-id=0-1&t=hlse5NvfDq17J9GS-1
+   https://www.figma.com/design/jj23NNuuOJvf5zNU0DhqGZ/Untitled?node-id=5-4&t=pfgIimWatp11Hctm-1
+   
 
 ### Troubleshooting:
 
