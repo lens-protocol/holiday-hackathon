@@ -2,8 +2,8 @@
 
 ## Team Members
 
-[Shruti Panjwani] - [@shrutipanjwani]
-[Roshan Vadassery] - [@roshanbvadassery]
+[Shruti Panjwani] - [[@shrutipanjwani](https://github.com/shrutipanjwani)]
+[Roshan Vadassery] - [[@roshanbvadassery](https://github.com/roshanbvadassery)]
 
 ## Project Description
 
@@ -49,4 +49,4 @@ https://bountylens.vercel.app/
 
 ### Accepted Claims
 
-![Claim Submission](./images/sccepted.png)
+![Claim Submission](./images/accepted.png)
