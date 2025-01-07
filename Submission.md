@@ -1,11 +1,3 @@
-   - **Project Name: MoodMint**
-   - **Team Members: Shubh Singhal** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
-
 ##Project Name: MoodMint
 
 ##Team Members:
