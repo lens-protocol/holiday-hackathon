@@ -1,70 +1,127 @@
-# Lens Holiday Hackathon
+# Hello!
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+I joined super late, but still wanted to explore the protocol.
 
-### Key Dates
+I almost finished the 3D scene beacon storage node uploading but ran into CORS issues. I was aiming to have a fully hosted R3F scene completely on-chain, no external dep. Even though it's missing most of the features I felt I should still share the full concept.
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+**Video Demo and rant:** [CLICK ME](https://www.youtube.com/watch?v=VOotGqwAxy0)
 
-### Tracks and Themes
+# Forward.lens
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+Forward.lens is a social platform built on Lens Protocol that transforms acts of paying it forward into evolving 3D digital art. Users create unique digital spaces called Beacons that grow and change through anonymous acts of generosity.
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+## Overview
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+Here's how it works:
 
-### Prizes
+- Every day, users can send one "beam" - a combination of tokens (ETH/USDC) and an encrypted message that gets randomly sent to another user's account.
+- When you send a beam, you earn Essence points that you can use to transform and enhance your own Beacons with visual effects and mutations - all stored permanently on-chain through Lens.
+- Each beam includes an encrypted message that only the recipient can read. Users can then rate that message which affects how much Essence will be earned by the sender.
+- Beacons require regular outward generosity to stay healthy - if you don't pay it forward monthly, your Beacon's health declines, eventually leading to its self-destruction
+- The Beacon's 3D scene evolves based on the user's generosity, with rare and ethereal effects unlocked with Essence earned through their acts of paying it forward.
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+Forward.lens demonstrates how blockchain tech, in particular Lens Protocol's advanced features, can make acts of kindness visible and permanent while creating beautiful, evolving digital spaces that reflect real community impact.
 
-### Rules
+## Technical Details
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+### Built With
 
-### Submit Your Project
+- Next.js
+- React Three Fiber & Drei
+- Lens Protocol V3
+- ConnectKit
+- Zustand for state management
+- TypeScript
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+### Features
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+- Wallet connection through ConnectKit
+- Automatic Lens login detection
+- Account selection for multiple Lens profiles
+- Profile editing (name, bio, picture)
+- Fully on-chain 3D scene storage via Lens
+- Encrypted messaging system
+- Random recipient selection
+- Effect/mutation system
+- Health tracking mechanisms
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+### Smart Contract Integration
 
-### Troubleshooting:
+- Token transfers (ETH/USDC)
+- Beacon state management
+- Effect verification
+- Health system tracking
+- Random recipient selection
+- Message encryption/decryption
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/forward-lens.git
+cd forward-lens
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Configure environment variables
+
+```bash
+# Copy the example env file
+cp .env.example .env.local
+
+# Edit .env.local with your values:
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID="your_project_id"
+NEXT_PUBLIC_ALCHEMY_KEY="your_alchemy_key"
+```
+
+4. Run the development server
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`
+
+## Environment Variables
+
+Required variables in `.env.local`:
+
+- `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID`: Your WalletConnect project ID
+- `NEXT_PUBLIC_ALCHEMY_KEY`: Your Alchemy API key
+
+## Usage
+
+1. Connect your wallet
+2. Log in with your Lens profile
+3. Create your first Beacon
+4. Send daily beams to participate
+5. Collect Essence through giving
+6. Transform your Beacon with effects
+
+## Contributing
+
+TDB
+
+## License
+
+This project is licensed under the MIT License
+
+## Acknowledgments
+
+- Lens Protocol team for their amazing protocol
+- ThreeJS and React Three Fiber communities
+- ConnectKit team for wallet integration
