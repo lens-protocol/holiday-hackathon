@@ -1,0 +1,745 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "contract AccessControlFactory",
+        "name": "accessControlFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AccountFactory",
+        "name": "accountFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract AppFactory",
+        "name": "appFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract GroupFactory",
+        "name": "groupFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract FeedFactory",
+        "name": "feedFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract GraphFactory",
+        "name": "graphFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract UsernameFactory",
+        "name": "usernameFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "userBlockingRule",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accountManagers",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "canExecuteTransactions",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canTransferTokens",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canTransferNative",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSetMetadataURI",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct AccountManagerPermissions[]",
+        "name": "accountManagersPermissions",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "usernamePrimitiveAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes[]",
+            "name": "dataForRequiredRules",
+            "type": "bytes[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "dataForAnyOfRules",
+            "type": "bytes[]"
+          }
+        ],
+        "internalType": "struct RuleExecutionData",
+        "name": "createUsernameData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes[]",
+            "name": "dataForRequiredRules",
+            "type": "bytes[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "dataForAnyOfRules",
+            "type": "bytes[]"
+          }
+        ],
+        "internalType": "struct RuleExecutionData",
+        "name": "assignUsernameData",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "source",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SourceStamp",
+        "name": "accountCreationSourceStamp",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "source",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SourceStamp",
+        "name": "createUsernameSourceStamp",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "source",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SourceStamp",
+        "name": "assignUsernameSourceStamp",
+        "type": "tuple"
+      }
+    ],
+    "name": "createAccountWithUsernameFree",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "accountManagers",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "canExecuteTransactions",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canTransferTokens",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canTransferNative",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "canSetMetadataURI",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct AccountManagerPermissions[]",
+        "name": "accountManagersPermissions",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "source",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "nonce",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct SourceStamp",
+        "name": "sourceStamp",
+        "type": "tuple"
+      }
+    ],
+    "name": "deployAccount",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "sourceStampVerificationEnabled",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "admins",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "graph",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "feeds",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "username",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "groups",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "defaultFeed",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "signers",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address",
+            "name": "paymaster",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "treasury",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct AppInitialProperties",
+        "name": "initialProperties",
+        "type": "tuple"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "value",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct DataElement[]",
+        "name": "extraData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "deployApp",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "admins",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "ruleAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "configData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRequired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct RuleConfiguration",
+            "name": "configuration",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum RuleOperation",
+            "name": "operation",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct RuleChange[]",
+        "name": "rules",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "value",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct DataElement[]",
+        "name": "extraData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "deployFeed",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "admins",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "ruleAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "configData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRequired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct RuleConfiguration",
+            "name": "configuration",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum RuleOperation",
+            "name": "operation",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct RuleChange[]",
+        "name": "rules",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "value",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct DataElement[]",
+        "name": "extraData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "deployGraph",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "admins",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "ruleAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "configData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRequired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct RuleConfiguration",
+            "name": "configuration",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum RuleOperation",
+            "name": "operation",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct RuleChange[]",
+        "name": "rules",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "value",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct DataElement[]",
+        "name": "extraData",
+        "type": "tuple[]"
+      }
+    ],
+    "name": "deployGroup",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "namespace",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "metadataURI",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "admins",
+        "type": "address[]"
+      },
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "ruleAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "bytes",
+                "name": "configData",
+                "type": "bytes"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRequired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct RuleConfiguration",
+            "name": "configuration",
+            "type": "tuple"
+          },
+          {
+            "internalType": "enum RuleOperation",
+            "name": "operation",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct RuleChange[]",
+        "name": "rules",
+        "type": "tuple[]"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bytes32",
+            "name": "key",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "value",
+            "type": "bytes"
+          }
+        ],
+        "internalType": "struct DataElement[]",
+        "name": "extraData",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "string",
+        "name": "nftName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "nftSymbol",
+        "type": "string"
+      }
+    ],
+    "name": "deployUsername",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

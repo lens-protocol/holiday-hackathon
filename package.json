@@ -1,0 +1,14 @@
+{
+  "name": "holiday-hackathon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:padimaster/holiday-hackathon.git",
+  "author": "Alex Padilla <alex.padilla@epn.edu.ec>",
+  "scripts": {
+    "compile": "pnpm --filter contracts run compile",
+    "deploy": "pnpm --filter contracts run deploy-zksync",
+    "build": "pnpm --filter app run build",
+    "start": "pnpm --filter app run start"
+  },
+  "license": "MIT"
+}
