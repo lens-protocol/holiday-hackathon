@@ -1,70 +1,102 @@
-# Lens Holiday Hackathon
+# Pumpkit
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+**Empowering Ecosystem Agents with Token-Driven Influence**
 
-### Key Dates
+Pumpkit is an AI-powered framework designed to transform the traditional KOL (Key Opinion Leader) model in Web3 and meme ecosystems. It allows projects to create customized ecosystem agents that manage and promote campaigns using token data while enabling community-driven KOL influence.
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+---
 
-### Tracks and Themes
+## 🚀 **Why we need Pumpkit?**
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+Pumpkit decentralizes KOL benefits by introducing ecosystem agents that leverage token-driven AI to actively engage and grow Web3 communities. This framework bridges the gap between project founders, token holders, and participants, ensuring equal opportunities for everyone to contribute and benefit.
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+Key highlights:
+- AI-powered campaign management.
+- Distribution of KOL-like influence to all token holders.
+- Revenue sharing among token holders.
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+---
 
-### Prizes
+## 🎯 **Problem Statement**
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+Traditional KOL models face several challenges:
+1. Centralized control over promotions and token influence.
+2. High barriers for new users to access KOL benefits.
+3. Limited opportunities for participants to actively contribute or gain value.
 
-### Rules
+Pumpkit solves these challenges by decentralizing the KOL system and empowering communities.
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+---
 
-### Submit Your Project
+## 🛠️ **How Pumpkit Works**
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+1. **Ecosystem Agents:**  
+   Ecosystem agents are AI-driven entities created using Pumpkit. Each agent is assigned a dedicated wallet to manage campaigns and distribute benefits.
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+2. **Campaign Flow:**  
+   - **Token Submission:** Participants send project tokens to the agent’s wallet to initiate campaigns.
+   - **Token-Driven Content:** The agent posts on lens, updates, and events based on token contributions and trusted sources.
+   - **Weighted Strategy:** Larger token contributions lead to more prioritized updates.
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+3. **Revenue Sharing:**  
+   Tokens received by agents are distributed proportionally among Pumpkit token holders, providing a sustainable incentive for community participation.
 
-### Troubleshooting:
+---
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+## 🌟 **Key Features**
+
+- **Campaign Initiation:**  
+  Ecosystem participants can start campaigns by sending project tokens to an agent’s wallet.
+
+- **Token-Driven Content:**  
+  Agents post content on lens and updates based on token data.
+
+- **Wallet Association:**  
+  Every agent is linked to a dedicated wallet for streamlined campaign management.
+
+- **Weighted Content Strategy:**  
+  The frequency and prioritization of content are influenced by token contributions.
+
+---
+
+## 🌍 **Vision**
+
+Pumpkit aims to democratize KOL-like influence and make it accessible to everyone. Its decentralized framework allows project founders, token holders, and ecosystem participants to:
+- Share equal benefits from KOL activities.
+- Actively participate in the growth of their ecosystem.
+- Contribute to a more inclusive and decentralized Web3 space.
+
+---
+
+## 📈 **Tokenomics**
+
+- **Pumpkit Token ($PMPK):**  
+  The utility token for the Pumpkit ecosystem, available for purchase and trade.
+
+- **Revenue Sharing:**  
+  A portion of tokens received by agents is distributed to Pumpkit token holders, ensuring a fair and transparent system for all participants.
+
+---
+
+
+## Screenshot
+
+![868dd71e-4327-49e2-bfb4-6543c41cce85](https://github.com/user-attachments/assets/90e8ea16-a47f-45f0-9a74-415fd78e6bfb)
+
+![c0e8a78e-016f-4032-b2d3-ae2de4001d60](https://github.com/user-attachments/assets/c4b3dcfa-87c4-4ecb-bcd5-6d694df94be9)
+
+
+## Source Code
+https://github.com/s-alih/pumpkit-lens
+
+## Presentation
+https://drive.google.com/file/d/1Qx6fVKEx33A3WQmcOCFB69z9dZlRBaha/view?usp=sharing
+
+
+
+
+
+
+
+
+
