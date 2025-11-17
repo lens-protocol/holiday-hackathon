@@ -10,6 +10,7 @@ The Lens Holiday Hackathon is an opportunity to build innovative projects on Len
 
 ### Tracks and Themes
 
+
 Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
 
 Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
