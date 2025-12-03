@@ -1,70 +1,84 @@
-# Lens Holiday Hackathon
+# h3lp.io 🌱 - Helping Help Others Help You
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+A permissionless marketplace built on Lens Protocol that helps creators offer
+personalized products and services to their community.
 
-### Key Dates
+# [Watch the video demo here!](https://javitoshi.com/videos/h3lp-demo-video.mp4)
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+[![h3lp.io Demo](https://h3lp.io/h3lp-readme-thumbnail.png)](https://javitoshi.com/videos/h3lp-demo-video.mp4)
 
-### Tracks and Themes
+## 🌟 Features
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+- **AI-Powered Product Generation**: Analyzes Lens profiles to suggest
+  personalized products and services
+- **Decentralized Marketplace**: Built on Lens Protocol for secure, web3-native
+  transactions
+- **Custom Feed Integration**: Connect with your favorite Lens creators
+- **Smart Contract Integration**: View transactions on
+  [Lens Testnet Explorer](https://block-explorer.testnet.lens.dev/address/0x57466D1767a5693251a5737A5c1a0C857c1Bbf6D#transactions)
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+## 🚀 Quick Start
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+1. Install dependencies:
 
-### Prizes
+```bash
+npm install
+```
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+2. Run development server:
 
-### Rules
+```bash
+npm run dev
+```
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+3. Open [http://localhost:3000](http://localhost:3000)
 
-### Submit Your Project
+## 🛠️ Tech Stack
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+- **Frontend**: Next.js 15, React 19, TailwindCSS
+- **AI Integration**: I tried Anthropic Claude, DeepSeek, Groq, OpenAI... All
+  with different results.. currently using only GPT-4o.
+- **Blockchain**: Lens Protocol, Wagmi, Viem
+- **UI Components**: Shadcn/UI
+- **Authentication**: ConnectKit by Family
+- **Web2 Backend**: Vercel API routes, Supabase, PostGresQL (the table
+  declarations are inside the `lib/postgres.ts` file)
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+## 🎯 Core Features
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+### AI-Powered Product Generation
 
-### Troubleshooting:
+The platform analyzes Lens profiles and publications to generate personalized
+product suggestions using state-of-the-art AI models.
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+### Dynamic User Interface
+
+Clean, interface (not mobile-ready yet, sorry!) with smooth animations and
+transitions built with modern React patterns and TailwindCSS.
+
+### Product Management
+
+Intuitive product creation and editing with smart contract integration for
+secure transactions.
+
+## 📝 GraphQL API
+
+The project reads publications and profiles using the Lens Protocol API at:
+`https://api-v2.lens.dev/`
+
+## 💡 Ideal use cases:
+
+- 1: Discover hidden talents you have, and monetize them.
+- 2: Help others monetize their talents too: pay them for services they aren't
+  currently offering... make a product, pay for it, and offer them the
+  opportunity to help you and make money too.
+
+## 🌐 Links
+
+- [h3lp.io](https://h3lp.io)
+
+- [Contract Explorer](https://block-explorer.testnet.lens.dev/address/0x72eB025487F1A5DaB9e8657CDBd5335009750314)
+
+---
+
+Built with 💚 for the Lens community
