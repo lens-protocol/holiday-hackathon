@@ -1,0 +1,52 @@
+{
+  "name": "lens-network-hardhat-boilerplate",
+  "scripts": {
+    "compile": "hardhat compile",
+    "clean:upgradable": "rimraf ./.upgradable/zkSync-era-test-node.json",
+    "clean:artifacts": "hardhat clean",
+    "clean": "yarn clean:artifacts && yarn clean:upgradable",
+    "deploy": "hardhat deploy-zksync --script deploy.ts --network lensTestnet",
+    "lint": "hardhat check",
+    "test": "yarn clean:upgradable && hardhat test"
+  },
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync": "^1.3.0",
+    "@matterlabs/hardhat-zksync-deploy": "^1.6.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ignition": "^0.15.0",
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomiclabs/hardhat-solhint": "^3.1.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@openzeppelin/contracts-upgradeable": "^4.9.6",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=18.0.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.5",
+    "hardhat-deploy": "^0.14.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "rimraf": "^5.0.7",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.3.0",
+    "typescript": ">=4.5.0",
+    "zksync-ethers": "^6.9.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "yarn": ">=3.2.4"
+  },
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "@matterlabs/hardhat-zksync-solc": "^1.2.5",
+    "@matterlabs/hardhat-zksync-verify": "^1.7.1"
+  }
+}

@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model
+model User {
+  id                String   @id @default(cuid())
+  first_name        String   @default("")
+  last_name         String   @default("")
+  email             String?  @unique
+  is_email_verified Boolean  @default(false)
+  phone             String?  @unique
+  is_phone_verified Boolean  @default(false)
+  password          String
+  is_admin          Boolean  @default(false)
+  timezone          String?
+  country           String?
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+
+  @@map("user")
+}
+
+model Brand {
+  id          String  @id @default(cuid())
+  name        String
+  address     String
+  description String?
+
+  @@map("brand")
+}
+
+model Influencer {
+  id          String  @id @default(cuid())
+  name        String
+  description String?
+  address     String
+  rewards     DealReward[]
+
+  @@map("influencer")
+}
+
+model Deal {
+  id            String           @id @default(cuid())
+  deal_id       String
+  name          String
+  brand_address String
+  budget        String
+  rating_range  Json?
+  status        String
+  influencer    Json
+  deal_fund_tx_hash String?
+  submissions   DealSubmission[]
+  rewards DealReward[]
+
+  @@map("deal")
+}
+
+model DealSubmission {
+  id                 String  @id @default(cuid())
+  influencer_address String
+  submission_link    String
+  rating             String?
+  deal               Deal    @relation(fields: [deal_id], references: [id])
+  deal_id            String
+  amount             String?
+  reward_release_tx_hash String?
+
+  @@map("deal_submission")
+}
+
+model DealReward {
+  id String @id @default(cuid())
+  deal               Deal    @relation(fields: [deal_id], references: [id])
+  deal_id            String
+  influencer         Influencer    @relation(fields: [influencer_id], references: [id])
+  influencer_id      String
+  amount             String
+  tx_hash             String?
+}

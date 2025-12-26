@@ -1,0 +1,49 @@
+version: '3.8'
+services:
+  postgres:
+    container_name: influenza_postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin@12345
+      POSTGRES_DB: influencer
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+  pgadmin:
+    container_name: influenza_pgadmin4
+    image: dpage/pgadmin4:latest
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin@12345
+    ports:
+      - "5050:80"
+    volumes:
+    - pg_admin:/var/lib/pgadmin/data/
+  redis:
+    container_name: influenza_redis
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis:/data
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=16
+  redis-insight:
+    image: redis/redisinsight:latest
+    container_name: influenza_redis_insight
+    ports:
+      - "5540:5540"
+    volumes:
+      - redis-insight:/data 
+volumes:
+  pg_data:
+  pg_admin:
+  redis:
+  redis-insight:
+  
