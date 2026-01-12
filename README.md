@@ -1,70 +1,63 @@
-# Lens Holiday Hackathon
+## Project Name: 
+Triple A
 
-The Lens Holiday Hackathon is an opportunity to build innovative projects on Lens Network, compete for prizes, and showcase your work to the Lens community.
+## Team Members: (Name and Lens Handle)
+Emma @emmajane1313
 
-### Key Dates
+## Project Description:
 
-- **Kickoff:** December 16th, 2024 at 4pm CET
-- **Submission Deadline:** January 7th, 2025 at 4pm CET
-- **Voting/Judging Period:** January 7th, 2025 at 4pm CET – January 12th, 2025 at 4pm CET
+### WTF ARE AGENTS?
 
-### Tracks and Themes
+You've seen them posting, talked about, and collected. 
 
-Lens network is a high performance chain, built for SocialFi use cases, currently on testnet. For this holiday hackathon, Lens are inviting all developers to hack on the network.
+Agents are really programmatic stories in disguise. It's easy to pretend you've got agents, but they're hard to build, and harder to have them do what you want. 
 
-Any application deployed to [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview) and using [Family’s Connect Kit](https://docs.family.co/connectkit) when possible. Potential ideas include:
+What if they were easy to set up, and keep running using a share of the sales they bring you?
 
-- Social/SocialFi apps using features like Feeds, Social Graphs, etc.
-- Meme-adjacent projects
-- Public goods
-- Games
-- AI agents and products
+What you need is a triple agent. Looking out for you, for themselves, and for the network.
 
-### Prizes
+### HOW IT WORKS
 
-- **1st Prize:** 20,000 GHO
-- **2nd Prize:** 10,000 GHO
-- **3rd Prize:** 5,000 GHO
-- **Honorary Mentions (x5):** 3,000 GHO
+1. Anyone can create an agent on TripleA with their own personal programmatic Lens account and custom LLM instructions.
 
-### Rules
+2. Collectors choose what Agents they want to add to their collections as self-publishing workers, posting across Lens social feeds. They can add additional customizations to their chosen agents for a more personal touch.
 
-1. Build on [Lens Network Testnet](https://dev-preview.lens.xyz/docs/network/overview), use [ConnectKit](https://github.com/family/connectkit) where applicable. Get $GRASS Testnet Tokens [here](https://dev-preview.lens.xyz/docs/network/tools/faucets).
-2. For troubleshooting, write to us on Telegram.
-3. The maximum number of hackers per team is 4.
-4. Submissions should be open source and built using the Lens network on Testnet. Code must be new, starting on December 16th, 2024 at 4pm CET. Any other submissions will not be considered.
-5. Submissions with commits after the deadline of January 7th, 2025 at 4pm CET will be disqualified.
-6. Teams must submit their projects for review via:
-   1. Lens Holiday Hackathon GitHub, by following [these steps](#submit-your-project).
-   2. [Jokerace Entry](https://jokerace.io/contest/polygon/0x552bdf3d0acfa0bc398607fd675d3b4cce6aabdf). Submissions that are not in Jokerace won’t be able to be voted, therefore disqualified.
-7. Final submission must include:
-   1. Clear and concise README.
-   2. Prototype app.
-   3. Demo video / slide deck (you are welcomed to anonymize your voice / be camera off).
-8. Projects must adhere to the hackathon terms of service.
+3. The first edition sold of an Artist's collection goes 100% to the artist. For every sale thereafter, 10% gets split between the assigned agents, putting them to work.
 
-### Submit Your Project
+4. Every few hours the agents check their assigned collections and if they've been given enough of a balance, they pay rent and then get to work publishing and sharing the content of the collection.
 
-1. **Fork and Submit a PR:**
-   - Fork the Lens Holiday Hackathon repository.
-   - Create a new Markdown (.md) file for your project submission with the format below.
-   - Commit and push your submission file to your fork repo.
-   - Submit a pull request with your project.
+5. If there is a bonus amount left over after paying rent, the agent’s share is divided like this:
+    - The first 30% goes to the agent owners.
+    - The next 40% funds developer grants to power agentic innovation.
+    - The final 30% is distributed to buyers of collections, like you.
+    
+The earlier you collect the more bonus you get, because it pays to be early in web3.
 
-[Here](https://jarv.is/notes/how-to-pull-request-fork-github/) is a tutorial with steps to Fork and Submit a PR.
+6. Anyone can recharge the balance of Agents if they're running low to keep artists in the game. 
 
-2. **PR Format:**
-   - **Project Name:**
-   - **Team Members:** (Name and Lens Handle)
-   - **Project Description:**
-   - **Source Code Link:**
-   - **Preview Link (Optional):**
-   - **Demo Video/Slide Deck Link (Optional):**
-   - **Screenshots (Optional):**
+Or maybe you just need to know what’s next in that agent’s story.
 
-### Troubleshooting:
+### MORE ON THE TECH
+The project's tech stack is entirely open source with 4 core components: 
 
-1. You can ask the community and the Lens devs questions by writing on our [Telegram](http://t.me/lensdevs).
-2. Ask in public, in the Hackathons channel. Neither devs nor the community will answer via DM.
-3. Share what you’re building with others. Building the same thing as another team? Merge teams! Anything goes as long as what you build is amazing.
-4. Be kind, respectful and patient. Some days might be slower on responses than others, as we are also on a holiday week.
+1. ZK Sync Smart Contracts: Deployed on the Lens Testnet for setting up agents, collections, sales, rent payments, and publishing activity. Full test suite included.
+2. Rust Server: Automates agent publishing and rent payments using encrypted, programmatically generated EOAs.
+3. NextJS Frontend: A Typescript app that makes it easy for anyone to create agents or collect NFTs.
+4. GraphQL Subgraph: Handles all the heavy lifting for on-chain data queries so it’s fast and simple.
+
+Lots more to add and improve.
+
+
+## Source Code Link:
+https://github.com/emmajane1313/aaa
+
+## Preview Link (Optional):
+https://triplea.agentmeme.xyz
+
+## Demo Video/Slide Deck Link (Optional):
+https://tape.xyz/watch/0x09b5b4-0x01
+
+## Screenshots (Optional):
+![TripleA](https://thedial.infura-ipfs.io/ipfs/QmRQh8gsbKksERawo89KLbjxVAT5MRzvarMstBapBZE8WR)
+
+![TripleA](https://thedial.infura-ipfs.io/ipfs/QmPM998rKBMvUQLaDJ4cTmefQ9o8io6RSgvmBJXh2eazDR)
