@@ -1,0 +1,48 @@
+name: "Verify"
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Repository
+        uses: ./.github/actions/setup
+
+      - name: Lint Code
+        run: yarn lint
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Repository
+        uses: ./.github/actions/setup
+
+      - name: Setup Environment Variables
+        shell: bash
+        run: echo "PRIVATE_KEY=${{ secrets.PRIVATE_KEY }}" > .env
+
+      - name: Run Tests
+        run: yarn test
+
+  compile:
+    name: Compile
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Repository
+        uses: ./.github/actions/setup
+
+      - name: Compile
+        run: yarn compile
